@@ -14,16 +14,16 @@ public class AddORMultiply {
 
     public static void main(String[] args) {
 
-        double numInput1 = Double.parseDouble(JOptionPane.showInputDialog("Please enter a number: "));
-        double numInput2 = Double.parseDouble(JOptionPane.showInputDialog("Please enter another number: "));
+        double Input1 = Double.parseDouble(JOptionPane.showInputDialog("Please enter a number: "));
+        double Input2 = Double.parseDouble(JOptionPane.showInputDialog("Please enter another number: "));
         double result = 0;
 
-        if(numInput1 > numInput2){
-           result = multiply(numInput1,numInput2);
+        if(Input1 > Input2){
+           result = multiply(Input1,Input2);
         }
 
-        if (numInput1 <= numInput2){
-            result = addition(numInput1,numInput2);
+        if (Input1 <= Input2){
+            result = addition(Input1,Input2);
         }
 
         JOptionPane.showMessageDialog(null, "The result is: " + result);
@@ -33,15 +33,15 @@ public class AddORMultiply {
     }
 
 
-    public static double addition(double input1, double input2){
+    public static double addition(double Input1, double Input2){
 
-        return input1 + input2;
+        return Input1 + Input2;
 
     }
 
-    public static double multiply(double input1, double input2){
+    public static double multiply(double Input1, double Input2){
 
-        return input1 * input2;
+        return Input1 * Input2;
 
     }
 
